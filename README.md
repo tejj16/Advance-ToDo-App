@@ -2,123 +2,148 @@
 
 📅 **Your personal task manager – stay organized, stay productive!**
 
-**Advanced To-Do App** is a powerful task management application designed for iOS, built using **SwiftUI** and **Core Data**. It helps users efficiently create, track, and manage their daily tasks with a sleek and user-friendly interface.
+**Advanced To-Do App** is a feature-rich task management application built for iOS using **SwiftUI** and **Core Data**. It allows users to create, manage, and track their daily tasks with a smooth, elegant, and responsive interface.
 
 ---
 
 ## 🌟 Features & Functionality
 
-### ✅ **Task Management**
+### ✅ Task Management
+- Create, edit, and delete tasks effortlessly  
+- Set due dates, descriptions, and priority levels  
+- Mark tasks as completed with a single tap  
 
-- **Create, Edit & Delete** tasks effortlessly
-- **Set Due Dates & Priorities** for better organization
-- **Mark Tasks as Completed** with a single tap
+### 📌 Prioritization & Filtering
+- Assign tasks **Low**, **Medium**, or **High** priority  
+- Filter tasks by **All**, **Overdue**, and **Completed**  
+- Use swipe gestures for quick deletion  
 
-### 📌 **Prioritization & Filtering**
+### 🗣 Voice Input
+- Use built-in **Speech Recognition** to add task descriptions by voice  
+- Tap the **microphone icon** to start or stop recording  
 
-- Assign **Low, Medium, or High** priority levels
-- **Filter Tasks** into **All, Overdue, and Completed** categories
-- **Swipe Gestures** for quick task updates
+### 🎨 User Interface
+- Intuitive design with light/dark mode support  
+- Floating **+** button for quick task actions  
+- Seamless navigation across multiple screens  
 
-### 🎨 **User Interface**
+### 💾 Data Persistence
+- **Core Data** ensures all tasks are stored permanently  
+- Real-time syncing of task data between views  
 
-- **Floating Add Button (+) for quick task creation**
-- **Smooth navigation across different screens**
-
-### 📾 **Data Persistence**
-
-- **Core Data Integration** for permanent task storage
-- **Real-Time Updates** across the app
-
-### 📁 **Task Selection for Editing/Deletion**
-
-- When selecting **Edit Task**, users first choose a task to edit
-- When selecting **Delete Task**, users pick a task before confirming deletion
+### 🧠 Smart Task Selection
+- When editing or deleting, users select from a task list before proceeding  
+- Prevents accidental modification or deletion  
 
 ---
 
-## 🏠 Project Structure
+## 🏗 Project Structure
 
 ```
 AdvancedToDoApp/
-📂 Models/
-    📝 TaskModel.swift              # Data model for tasks
-📂 Persistence/
-    📂 CoreDataManager.swift        # Manages Core Data operations
-📂 ViewModels/
-    🎯 TaskViewModel.swift          # Handles task logic
-📂 Views/
-    🏡 Home/
-        📋 TaskListView.swift       # Displays task list
-        📂 TaskRowView.swift        # Individual task row UI
-    ✍️ TaskCreation/
-        ➕ AddEditTaskView.swift     # Add/Edit task UI
-    🔍 TaskDetails/
-        📄 TaskDetailView.swift     # Task detail view
-    ℹ️ About/
-        ℹ️ AboutView.swift          # App information & contributors
-📂 Resources/
-    🎨 Assets.xcassets              # App images & icons
-🚀 AdvancedToDoAppApp.swift         # Main app entry point
-ℹ️ Info.plist                       # App configuration file
+├── Models/
+│   └── TaskModel.swift                # Codable struct (if applicable)
+├── Persistence/
+│   ├── CoreDataManager.swift         # Core Data stack setup
+│   └── Persistence.swift             # NSPersistentContainer handler
+├── ViewModels/
+│   └── TaskViewModel.swift           # Observable task logic controller
+├── Views/
+│   ├── Home/
+│   │   ├── TaskListView.swift        # Displays list with filter
+│   │   └── TaskRowView.swift         # UI for single row task
+│   ├── TaskCreation/
+│   │   └── AddEditTaskView.swift     # Add/edit form with speech support
+│   ├── TaskDetails/
+│   │   ├── TaskDetailView.swift      # Detailed task view
+│   │   └── SelectTaskView.swift      # List for selecting task to edit/delete
+│   ├── LaunchScreen/
+│   │   └── LaunchScreen.swift        # Initial branding screen
+│   └── About/
+│       └── AboutView.swift           # App & team info
+├── Resources/
+│   ├── Assets.xcassets               # App icon and assets
+│   └── Info.plist                    # Permissions & config
+├── AdvancedToDoAppApp.swift          # App entry point
+└── DateFormatter+Extension.swift     # Custom date formatting helper
 ```
 
 ---
 
 ## 🛠 Technology Stack
 
-| **Technology**         | **Description** |
-| ---------------------- | --------------- |
-| 🖥 **Language**        | Swift           |
-| 📱 **Framework**       | SwiftUI         |
-| 📂 **Database**        | Core Data       |
-| 🛠 **IDE**             | Xcode           |
-| 🔄 **Version Control** | Git & GitHub    |
+| Technology       | Description            |
+|------------------|------------------------|
+| 🖥 Language       | Swift                  |
+| 📱 Framework      | SwiftUI                |
+| 💾 Database       | Core Data              |
+| 🎙 Voice Input    | Speech Framework (iOS) |
+| 🛠 IDE            | Xcode                  |
+| 🔄 Version Control| Git & GitHub           |
 
 ---
 
-## 📝 How to Use
+## 🚀 Getting Started
 
-### ➕ **Adding a Task**
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/AdvancedToDoApp.git
+cd AdvancedToDoApp
+```
 
-1. Tap on the `+` button.
-2. Enter a title, description, due date, and priority.
-3. Tap **Save** to store the task.
+### 2️⃣ Open in Xcode
+- Launch `AdvancedToDoApp.xcodeproj`  
+- Make sure you're using **Xcode 15+**
 
-### ✏️ **Editing a Task**
+### 3️⃣ Run the App
+- Select a simulator or device  
+- Press ▶️ **Run**
 
-1. Tap `+` and select **Edit Task**.
-2. Choose a task from the list.
-3. Modify details and save changes.
+---
 
-### 🗑 **Deleting a Task**
+## 📚 How to Use
 
-1. Tap `+` and select **Delete Task**.
-2. Pick a task and confirm deletion.
+### ➕ Add a Task
+1. Tap the **+** button in the bottom toolbar  
+2. Fill in the **title**, **description**, **due date**, and **priority**  
+3. Tap **Save**
 
-### ✅ **Marking a Task as Completed**
+### 🎤 Add Description Using Voice
+1. Tap the **mic icon** beside the description field  
+2. Speak your task — text auto-fills as you speak  
+3. Tap mic again to stop
 
-- Tap the **checkmark icon** next to a task to mark it as done.
+### ✏️ Edit a Task
+1. Tap **+ → Edit Task**  
+2. Choose a task from the list  
+3. Modify and save
+
+### 🗑 Delete a Task
+1. Tap **+ → Delete Task**  
+2. Select a task and confirm deletion
+
+### ✅ Complete a Task
+- Tap the **checkmark icon** to toggle completion
 
 ---
 
 ## 👨‍💻 Contributors
 
-### 🎯 **Group 12**
+🎯 **Group 12**
 
-🚀 **Tej Nileshkumar Patel** - `101450840`\
-🚀 **Subhan Mohammed Abdul** - `101397394`\
-🚀 **Bhavya Vaghela** - `101427560`
+- 🚀 **Tej Nileshkumar Patel** – *101450840*  
+- 🚀 **Subhan Mohammed Abdul** – *101397394*  
+- 🚀 **Bhavya Vaghela** – *101427560*
 
 ---
 
 ## 🔮 Future Enhancements
 
-🚀 **Push Notifications** – Get reminders for upcoming and overdue tasks\
-☁️ **Cloud Syncing** – Sync tasks across multiple devices\
-🎧 **Voice Input Support** – Add tasks using voice commands
+- 🔔 **Push Notifications** for task reminders  
+- ☁️ **CloudKit Syncing** across devices  
+- 🎧 **Advanced Voice Commands** for full task creation
 
 ---
 
-💙 **Developed with passion by Group 12** 💙
-
+> 💡 “Stay organized. Stay ahead.”  
+> 💙 Developed with passion by **Group 12** 💙
