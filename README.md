@@ -37,6 +37,35 @@
 
 ---
 
+## 📱 Interface
+
+> main page
+
+---
+
+![Simulator Screenshot - iPhone 16 Pro - 2025-03-30 at 12 22 05](https://github.com/user-attachments/assets/cc9a8e33-1a28-471b-bf8f-a67272f775d1)
+
+---
+
+> Home Page
+ 
+---
+
+![Simulator Screenshot - iPhone 16 Pro - 2025-03-30 at 12 22 13](https://github.com/user-attachments/assets/b0639557-336a-4193-a2fb-228e556e005b)
+
+---
+
+> Add task(option)
+
+---
+
+![Simulator Screenshot - iPhone 16 Pro - 2025-03-30 at 12 22 16](https://github.com/user-attachments/assets/e0c7c922-e844-4bdd-ab2d-ee569d3f5a58)
+![Simulator Screenshot - iPhone 16 Pro - 2025-03-30 at 12 22 19](https://github.com/user-attachments/assets/ffc7974a-e6f8-43bc-a110-dc982b316bfb)
+
+
+
+
+
 ## 🏗 Project Structure
 
 ```
